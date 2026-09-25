@@ -32,8 +32,8 @@ def list_all_Videos(videos):
 
 def add_video(videos):
 
-    video_name = input("Enter video name : ")
-    video_time = input("Enter video time : ")
+    video_name = input("Wirte video name : ")
+    video_time = input("Wirte video time : ")
     videos.append({'Name': video_name, 'Time': video_time})
     save_helper(videos)
 
@@ -52,7 +52,7 @@ def update_details_videos(videos):
         print("*"* 90)
 
     else:
-        print("Invaled Prompt")
+        print("Invalid Prompt")
 
 def delete_video(videos):
     list_all_Videos(videos)
@@ -62,9 +62,9 @@ def delete_video(videos):
         
         del videos[index - 1]
         save_helper(videos)
-        print("Sucessefully completed.")
+        print("Successfully completed.")
         print("*"* 90)
     
     else:
-        print("Invaled Prompt")
+        print("Invalid Prompt")
 
